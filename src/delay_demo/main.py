@@ -1,7 +1,10 @@
 import time
 
 
-def delay_demo():
-    for i in range(100):
-        print(i)
-        time.sleep(1)
+def cli():
+    try:
+        for i in range(100):
+            print(i)
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("delay-demo caught the KeyboardInterrupt, yay!")
